@@ -1,0 +1,16 @@
+﻿@model Color
+
+<form asp-action="Update" asp-controller="Color" method="post">
+    <div class="mb-3">
+        <label class="form-label">Color Id</label>
+        <input type="text" class="form-control" id="InputBrandId" asp-for="Id">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Color Name</label>
+        <input type="text" class="form-control" id="InputBrandId" asp-for="Name">
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        Update Color
+    </button>
+</form>

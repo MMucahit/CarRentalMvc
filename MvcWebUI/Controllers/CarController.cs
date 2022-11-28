@@ -1,4 +1,7 @@
-﻿using DataAccess.Concrete.EntityFramework;
+﻿using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,13 +10,10 @@ namespace MvcWebUI.Controllers
     public class CarController : Controller
     {
         //InMemoryCarDal _cars = new InMemoryCarDal();
-        EfCarDal _cars = new EfCarDal();
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //EfCarDal _cars = new EfCarDal();
+        CarManager _cars = new CarManager(new EfCarDal());
 
-        public IActionResult Privacy()
+        public IActionResult Index()
         {
             return View();
         }

@@ -1,0 +1,22 @@
+﻿@model Brand
+
+<div class="row ">
+    <div class="card mx-auto" style="width: 18rem;">
+        <img src="https://www.otomobilcini.com/wp-content/uploads/2022/01/arabamarkalogo-1024x576.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <div>
+                <div class="row text-danger">Brand Id => @Model.Id</div>
+                <div class="row text-danger">Brand Name => @Model.Name</div>
+                <form asp-action="Delete" asp-controller="Brand" method="post">
+                    <button class="btn btn-warning" type="submit">Delete</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+                <form asp-action="Update" asp-controller="Brand" method="get">
+                    <button class="btn btn-warning" type="submit">Update</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

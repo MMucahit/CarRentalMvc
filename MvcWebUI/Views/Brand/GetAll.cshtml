@@ -1,0 +1,19 @@
+﻿@model List<Brand>
+
+<div class="row">
+    @foreach (var brand in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.otomobilcini.com/wp-content/uploads/2022/01/arabamarkalogo-1024x576.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="row">
+                        <a asp-controller="Brand" asp-action="GetById" asp-route-id=@brand.Id>@brand.Id</a>
+                    </div>
+                    <div class="row text-danger">Brand Id => @brand.Id</div>
+                    <div class="row text-danger">Brand Name => @brand.Name</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

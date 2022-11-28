@@ -1,0 +1,22 @@
+﻿@model Color
+
+<div class="row ">
+    <div class="card mx-auto" style="width: 18rem;">
+        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/ADA1/production/_100994444_gettyimages-680194152.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <div>
+                <div class="row text-danger">Color Id => @Model.Id</div>
+                <div class="row text-danger">Color Name => @Model.Name</div>
+                <form asp-action="Delete" asp-controller="Color" method="post">
+                    <button class="btn btn-warning" type="submit">Delete</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+                <form asp-action="Update" asp-controller="Color" method="get">
+                    <button class="btn btn-warning" type="submit">Update</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

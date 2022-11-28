@@ -1,0 +1,19 @@
+﻿@model List<Color>
+
+<div class="row">
+    @foreach (var color in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/ADA1/production/_100994444_gettyimages-680194152.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="row">
+                        <a asp-controller="Color" asp-action="GetById" asp-route-id=@color.Id>@color.Id</a>
+                    </div>
+                    <div class="row text-danger">Brand Id => @color.Id</div>
+                    <div class="row text-danger">Brand Name => @color.Name</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

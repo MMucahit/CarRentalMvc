@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\MvcWebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Brand/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Brand/GetAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcR2V0QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Brand/GetById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcR2V0QnlJZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Brand/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Car/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +46,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Car/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Color/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Color/GetAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcR2V0QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Color/GetById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcR2V0QnlJZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Color/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Home/Index.cshtml]

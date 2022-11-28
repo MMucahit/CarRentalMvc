@@ -1,0 +1,13 @@
+﻿@model Brand
+
+<form asp-action="Add" asp-controller="Brand" method="post">
+    <div class="mb-3">
+        <label class="form-label">Brand Name</label>
+        <input type="text" class="form-control" id="InputPrice" asp-for="Name">
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        Create Brand
+    </button>
+</form>
+

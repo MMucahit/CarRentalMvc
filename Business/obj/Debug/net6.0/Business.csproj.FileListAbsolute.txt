@@ -10,3 +10,8 @@ C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Bus
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\refint\Business.dll
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Business.pdb
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\ref\Business.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\bin\Debug\net6.0\DataAccess.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\bin\Debug\net6.0\Entities.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\bin\Debug\net6.0\Entities.pdb
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Business.csproj.CopyComplete

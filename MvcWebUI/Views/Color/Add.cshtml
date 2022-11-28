@@ -1,0 +1,13 @@
+﻿@model Color
+
+<form asp-action="Add" asp-controller="Color" method="post">
+    <div class="mb-3">
+        <label class="form-label">Color Name</label>
+        <input type="text" class="form-control" id="InputPrice" asp-for="Name">
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        Create Color
+    </button>
+</form>
+
