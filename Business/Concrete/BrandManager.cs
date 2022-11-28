@@ -13,7 +13,11 @@ namespace Business.Concrete
         }
         public void Add(Brand brand)
         {
-            _brandDal.Add(brand);
+            if(brand.Name.Length > 2)
+            {
+                _brandDal.Add(brand);
+            }
+            Console.WriteLine("Brand Name lenght should be higher than two characters!");
         }
 
         public void Delete(Brand brand)
@@ -30,7 +34,6 @@ namespace Business.Concrete
         {
             return _brandDal.GetById(brand);
         }
-
         public Brand GetById(int id)
         {
             return _brandDal.GetById(id);

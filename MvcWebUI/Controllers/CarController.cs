@@ -66,5 +66,17 @@ namespace MvcWebUI.Controllers
             Console.WriteLine("Deleted");
             return RedirectToAction("GetAll");
         }
+
+        public IActionResult GetCarsByBrandId(int id)
+        {
+            List<Car> cars = _cars.GetCarsByBrandId(id);
+            return View("GetCarsByBrandId", cars);
+        }
+
+        public IActionResult GetCarsByColorId(int id)
+        {
+            List<Car> cars = _cars.GetCarsByColorId(id);
+            return View("GetCarsByColorId", cars);
+        }
     }
 }

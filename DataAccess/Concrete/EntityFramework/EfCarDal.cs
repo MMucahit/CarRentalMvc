@@ -47,6 +47,22 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public List<Car> GetCarsByBrandId(int id)
+        {
+            using (Context _context = new Context())
+            {
+                return _context.Set<Car>().Where(c => c.BrandId == id).ToList();
+            }
+        }
+
+        public List<Car> GetCarsByColorId(int id)
+        {
+            using (Context _context = new Context())
+            {
+                return _context.Set<Car>().Where(c => c.ColorId == id).ToList();
+            }
+        }
+
         public void Update(Car entity)
         {
             using (Context _context = new Context())

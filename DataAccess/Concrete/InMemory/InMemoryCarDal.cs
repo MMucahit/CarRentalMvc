@@ -51,5 +51,15 @@ namespace DataAccess.Concrete.InMemory
         {
             return _cars.FirstOrDefault(c => c.Id == id);
         }
+
+        public List<Car> GetCarsByBrandId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Car> GetCarsByColorId(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -15,7 +15,11 @@ namespace Business.Concrete
 
         public void Add(Car car)
         {
-            _carDal.Add(car);
+            if (car.DailyPrice > 0)
+            {
+                _carDal.Add(car);
+            }
+            Console.WriteLine("Car Price should be higher than zero!");
         }
 
         public void Delete(Car car)
@@ -36,6 +40,16 @@ namespace Business.Concrete
         public Car GetById(int id)
         {
             return _carDal.GetById(id);
+        }
+
+        public List<Car> GetCarsByBrandId(int id)
+        {
+            return _carDal.GetCarsByBrandId(id);
+        }
+
+        public List<Car> GetCarsByColorId(int id)
+        {
+            return _carDal.GetCarsByColorId(id);
         }
 
         public void Update(Car car)
