@@ -1,15 +1,13 @@
-﻿using DataAccess.Abstract;
-using DataAccess.Concrete.InMemory;
+﻿using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
-using MvcWebUI.Models;
-using System.Diagnostics;
 
 namespace MvcWebUI.Controllers
 {
     public class CarController : Controller
     {
-        CarDal _cars = new CarDal();
+        //InMemoryCarDal _cars = new InMemoryCarDal();
+        EfCarDal _cars = new EfCarDal();
         public IActionResult Index()
         {
             return View();
@@ -23,23 +21,23 @@ namespace MvcWebUI.Controllers
         public IActionResult GetAll()
         {
             List<Car> cars = _cars.GetAll();
-            return View("GetAll",cars);
+            return View("GetAll", cars);
         }
 
-        public IActionResult GetById(int id)
+        public IActionResult GetById(Car car)
         {
-            Car car = _cars.GetById(id);
-            return View("GetById", car);
+            Car _car = _cars.GetById(car);
+            return View("GetById", _car);
         }
 
         [HttpGet]
-        public IActionResult Add() 
+        public IActionResult Add()
         {
             return View("Add");
         }
 
         [HttpPost]
-        public IActionResult Add(Car car) 
+        public IActionResult Add(Car car)
         {
             _cars.Add(car);
             Console.WriteLine("Added");
@@ -49,21 +47,23 @@ namespace MvcWebUI.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            Car car = _cars.GetById(id);
-            return View("Update", car);
+            Car _car = _cars.GetById(id);
+            return View("Update", _car);
         }
 
         [HttpPost]
-        public IActionResult Update(Car car) 
+        public IActionResult Update(Car car)
         {
             _cars.Update(car);
+            Console.WriteLine("Updated");
             return RedirectToAction("GetAll");
         }
 
         [HttpPost]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(Car car)
         {
-            _cars.Delete(id);
+            _cars.Delete(car);
+            Console.WriteLine("Deleted");
             return RedirectToAction("GetAll");
         }
     }

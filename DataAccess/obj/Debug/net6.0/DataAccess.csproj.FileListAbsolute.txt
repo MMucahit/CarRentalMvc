@@ -1,4 +1,5 @@
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\DataAccess.dll
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\DataAccess.pdb
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\Entities.dll
@@ -12,4 +13,5 @@ C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\D
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.dll
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

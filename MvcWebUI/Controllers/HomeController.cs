@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MvcWebUI.Models;
-using System.Diagnostics;
 
 namespace MvcWebUI.Controllers
 {
