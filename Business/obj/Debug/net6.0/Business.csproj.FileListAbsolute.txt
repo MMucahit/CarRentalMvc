@@ -1,0 +1,12 @@
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\bin\Debug\net6.0\Business.deps.json
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\bin\Debug\net6.0\Business.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\bin\Debug\net6.0\Business.pdb
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Business.csproj.AssemblyReference.cache
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Business.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\refint\Business.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\Business.pdb
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\Business\obj\Debug\net6.0\ref\Business.dll

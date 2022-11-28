@@ -1,0 +1,20 @@
+﻿@model Car
+
+<div class="row ">
+    <div class="card mx-auto" style="width: 18rem;">
+        <div class="card-body">
+            <div>
+                <div class="row text-danger">Model Year => @Model.ModelYear</div>
+                <div class="row text-danger">Daily Price => @Model.DailyPrice</div>
+                <form asp-action="Delete" asp-controller="Car" method="post">
+                    <button class="btn btn-warning" type="submit">Delete</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+                <form asp-action="Update" asp-controller="Car" method="get">
+                    <button class="btn btn-warning" type="submit">Update</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

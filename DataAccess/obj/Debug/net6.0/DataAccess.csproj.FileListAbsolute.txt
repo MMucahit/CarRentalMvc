@@ -1,0 +1,15 @@
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\Entities.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\bin\Debug\net6.0\Entities.pdb
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

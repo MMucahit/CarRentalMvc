@@ -1,0 +1,32 @@
+﻿@model Car
+
+<form asp-action="Add" asp-controller="Car" method="post">
+    <div class="mb-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" id="InputBrandId" asp-for="Id">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">BrandId</label>
+        <input type="text" class="form-control" id="InputBrandId" asp-for="BrandId">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">ColorId</label>
+        <input type="text" class="form-control" id="InputPrice" asp-for="ColorId">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">ModelYear</label>
+        <input type="text" class="form-control" id="InputDescription" asp-for="ModelYear">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">DailyPrice</label>
+        <input type="text" class="form-control" id="InputImageUrl" asp-for="DailyPrice">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <input type="text" class="form-control" id="InputImageUrl" asp-for="Description">
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        Create Car
+    </button>
+</form>

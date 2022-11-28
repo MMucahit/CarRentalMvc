@@ -1,0 +1,18 @@
+﻿@model List<Car>
+
+<div class="row">
+    @foreach (var car in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <div class="row">
+                    <a asp-controller="Car" asp-action="GetById" asp-route-id=@car.Id>@car.Id</a>
+                </div>
+                    <div class="row text-danger">Model Year => @car.ModelYear</div>
+                    <div class="row text-danger">Daily Price => @car.DailyPrice</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
