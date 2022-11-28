@@ -1,8 +1,7 @@
-﻿using Business.Abstract;
-using Business.Concrete;
+﻿using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
-using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
+using Entities.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MvcWebUI.Controllers
@@ -24,9 +23,9 @@ namespace MvcWebUI.Controllers
             return View("GetAll", cars);
         }
 
-        public IActionResult GetById(Car car)
+        public IActionResult GetById(int id)
         {
-            Car _car = _cars.GetById(car);
+            Car _car = _cars.GetById(id);
             return View("GetById", _car);
         }
 
@@ -77,6 +76,12 @@ namespace MvcWebUI.Controllers
         {
             List<Car> cars = _cars.GetCarsByColorId(id);
             return View("GetCarsByColorId", cars);
+        }
+
+        public IActionResult GetCarDetail()
+        {
+            List<CarDetailDto> cars = _cars.GetCarDetail().ToList();
+            return View("GetCarDetail", cars);
         }
     }
 }

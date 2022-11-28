@@ -1,5 +1,6 @@
-﻿using DataAccess.Concrete.EntityFramework;
+﻿using Core.DataAccess.EntityFramework;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace DataAccess.Abstract
 {
@@ -7,5 +8,6 @@ namespace DataAccess.Abstract
     {
         List<Car> GetCarsByBrandId(int id);
         List<Car> GetCarsByColorId(int id);
+        List<CarDetailDto> GetCarDetail();
     }
 }

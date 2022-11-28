@@ -1156,9 +1156,25 @@
           }
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Entities.dll": {}
         },
@@ -3511,6 +3527,11 @@
         "version.txt"
       ]
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -3531,11 +3552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3552,8 +3573,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\Entities.csproj"
+            "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\Entities.csproj"
             }
           }
         }

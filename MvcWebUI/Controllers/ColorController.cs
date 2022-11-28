@@ -20,9 +20,9 @@ namespace MvcWebUI.Controllers
             return View("GetAll", colors);
         }
 
-        public IActionResult GetById(Color color)
+        public IActionResult GetById(int id)
         {
-            Color _color = _colors.GetById(color);
+            Color _color = _colors.GetById(id);
             return View("GetById", _color);
         }
 

@@ -13,7 +13,7 @@ namespace Business.Concrete
         }
         public void Add(Brand brand)
         {
-            if(brand.Name.Length > 2)
+            if (brand.Name.Length > 2)
             {
                 _brandDal.Add(brand);
             }
@@ -30,13 +30,9 @@ namespace Business.Concrete
             return _brandDal.GetAll();
         }
 
-        public Brand GetById(Brand brand)
-        {
-            return _brandDal.GetById(brand);
-        }
         public Brand GetById(int id)
         {
-            return _brandDal.GetById(id);
+            return _brandDal.Get(b => b.Id == id);
         }
 
         public void Update(Brand brand)

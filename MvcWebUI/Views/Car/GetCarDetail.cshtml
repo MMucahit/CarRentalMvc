@@ -1,0 +1,17 @@
+﻿@model List<CarDetailDto>
+
+<div class="row">
+    @foreach (var car in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdnr.yenicaggazetesi.com.tr/resize/663x373//news/2022/05/200520220912040952724.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="row text-danger">Model Year => @car.BrandName</div>
+                    <div class="row text-danger">Daily Price => @car.ColorName</div>
+                    <div class="row text-danger">Brand Id => @car.DailyPrice</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

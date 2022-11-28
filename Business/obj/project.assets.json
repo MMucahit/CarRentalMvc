@@ -1047,6 +1047,19 @@
           }
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1065,6 +1078,9 @@
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Entities.dll": {}
         },
@@ -3241,6 +3257,11 @@
         "version.txt"
       ]
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "DataAccess/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
@@ -3264,11 +3285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Business\\obj\\",
+      "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3285,11 +3306,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\Entities.csproj"
+            "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\Entities.csproj"
             }
           }
         }

@@ -19,9 +19,9 @@ namespace MvcWebUI.Controllers
             return View("GetAll", brand);
         }
 
-        public IActionResult GetById(Brand brand)
+        public IActionResult GetById(int id)
         {
-            Brand _brand = _brands.GetById(brand);
+            Brand _brand = _brands.GetById(id);
             return View("GetById", _brand);
         }
 

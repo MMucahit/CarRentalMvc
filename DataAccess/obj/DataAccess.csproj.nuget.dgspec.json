@@ -1,17 +1,78 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\DataAccess.csproj",
-        "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\Entities.csproj"
+              "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\Entities.csproj"
               }
             }
           }
@@ -79,14 +140,14 @@
         }
       }
     },
-    "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\Entities.csproj": {
+    "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\ReCapProject\\RecapMvc\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -102,7 +163,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\Core\\Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

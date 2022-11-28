@@ -9,93 +9,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MvcWebUI
 build_property.RootNamespace = MvcWebUI
-build_property.ProjectDir = C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\MvcWebUI\
+build_property.ProjectDir = C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\MMucahitNAS\Desktop\ReCapProject\RecapMvc\MvcWebUI
+build_property.MSBuildProjectDirectory = C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Brand/Add.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Brand/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Brand/GetAll.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Brand/GetAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcR2V0QWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Brand/GetById.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Brand/GetById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcR2V0QnlJZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Brand/Update.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Brand/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Car/Add.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Car/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Car/GetAll.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Car/GetAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldEFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Car/GetById.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Car/GetById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldEJ5SWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Car/GetCarsByBrandId.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Car/GetCarDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhckRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Car/GetCarsByBrandId.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnNCeUJyYW5kSWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Car/GetCarsByColorId.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Car/GetCarsByColorId.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEdldENhcnNCeUNvbG9ySWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Car/Update.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Car/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Color/Add.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Color/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Color/GetAll.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Color/GetAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcR2V0QWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Color/GetById.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Color/GetById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcR2V0QnlJZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Color/Update.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Color/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Home/Index.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Home/Privacy.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Shared/Error.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/_ViewImports.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/_ViewStart.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MMucahitNAS/Desktop/ReCapProject/RecapMvc/MvcWebUI/Views/Shared/_Layout.cshtml]
+[C:/Users/MMucahitNAS/Desktop/CarRentalMvc/MvcWebUI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hzw0qhf29z

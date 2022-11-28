@@ -1,5 +1,7 @@
 ﻿using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
+using System.Linq.Expressions;
 
 namespace DataAccess.Concrete.InMemory
 {
@@ -20,36 +22,27 @@ namespace DataAccess.Concrete.InMemory
 
         public void Add(Car entity)
         {
-            _cars.Add(entity);
+            throw new NotImplementedException();
         }
 
         public void Delete(Car entity)
         {
-            Car deletedCar = _cars.FirstOrDefault(c => c.Id == entity.Id);
-            _cars.Remove(deletedCar);
-        }
-        public void Update(Car entity)
-        {
-            Car existedCar = _cars.FirstOrDefault(c => c.Id == entity.Id);
-            entity.BrandId = existedCar.BrandId;
-            entity.ColorId = existedCar.ColorId;
-            entity.ModelYear = existedCar.ModelYear;
-            entity.DailyPrice = existedCar.DailyPrice;
-            entity.Description = existedCar.Description;
+            throw new NotImplementedException();
         }
 
-        public List<Car> GetAll()
+        public Car Get(Expression<Func<Car, bool>> filter)
         {
-            return _cars;
+            throw new NotImplementedException();
         }
 
-        public Car GetById(Car entity)
+        public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
         {
-            return _cars.FirstOrDefault(c => c.Id == entity.Id);
+            throw new NotImplementedException();
         }
-        public Car GetById(int id)
+
+        public List<CarDetailDto> GetCarDetail()
         {
-            return _cars.FirstOrDefault(c => c.Id == id);
+            throw new NotImplementedException();
         }
 
         public List<Car> GetCarsByBrandId(int id)
@@ -58,6 +51,11 @@ namespace DataAccess.Concrete.InMemory
         }
 
         public List<Car> GetCarsByColorId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Car entity)
         {
             throw new NotImplementedException();
         }
