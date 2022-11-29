@@ -1,0 +1,24 @@
+﻿@model User
+
+<form asp-action="Add" asp-controller="User" method="post">
+    <div class="mb-3">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control" id="InputPrice" asp-for="FirstName">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="InputPrice" asp-for="LastName">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="text" class="form-control" id="InputDescription" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="text" class="form-control" id="InputImageUrl" asp-for="Password">
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        Create User
+    </button>
+</form>

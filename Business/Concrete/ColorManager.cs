@@ -16,7 +16,7 @@ namespace Business.Concrete
         public IResult Add(Color color)
         {
             _colorDal.Add(color);
-            return new SuccessResult(true,"Added!");
+            return new SuccessResult(true, "Added!");
         }
 
         public IResult Delete(Color color)
@@ -27,12 +27,12 @@ namespace Business.Concrete
 
         public IDataResult<List<Color>> GetAll()
         {
-            return new SuccessDataResult<List<Color>>(_colorDal.GetAll(),true,"");
+            return new SuccessDataResult<List<Color>>(_colorDal.GetAll(), true, "");
         }
 
         public IDataResult<Color> GetById(int id)
         {
-            return new SuccessDataResult<Color>(_colorDal.Get(c => c.Id == id),true,"");
+            return new SuccessDataResult<Color>(_colorDal.Get(c => c.Id == id), true, "");
         }
 
         public IResult Update(Color color)

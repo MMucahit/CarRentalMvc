@@ -1,0 +1,23 @@
+﻿@model User
+
+<div class="row ">
+    <div class="card mx-auto" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjw5H6WaR1giOrB-miehl0LfWQjduiotv6jR-YqSdsK-jQNK3ACCdbPKC95CBAtFcwY7w&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+            <div>
+                <div class="row text-danger">First Name => @Model.FirstName</div>
+                <div class="row text-danger">Last Name => @Model.LastName</div>
+                <div class="row text-danger">Email => @Model.Email</div>
+                <div class="row text-danger">Password => @Model.Password</div>
+                <form asp-action="Delete" asp-controller="User" method="post">
+                    <button class="btn btn-warning" type="submit">Delete</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+                <form asp-action="Update" asp-controller="User" method="get">
+                    <button class="btn btn-warning" type="submit">Update</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

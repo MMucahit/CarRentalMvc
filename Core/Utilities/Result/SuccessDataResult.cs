@@ -1,11 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Query.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Core.Utilities.Result
+﻿namespace Core.Utilities.Result
 {
     public class SuccessDataResult<T> : DataResult<T>, IDataResult<T>
     {
@@ -25,7 +18,7 @@ namespace Core.Utilities.Result
         {
 
         }
-        public SuccessDataResult() : base(default,true)
+        public SuccessDataResult() : base(default, true)
         {
 
         }

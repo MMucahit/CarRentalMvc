@@ -1,0 +1,20 @@
+﻿@model List<User>
+
+<div class="row">
+    @foreach (var user in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjw5H6WaR1giOrB-miehl0LfWQjduiotv6jR-YqSdsK-jQNK3ACCdbPKC95CBAtFcwY7w&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="row">
+                        <a asp-controller="User" asp-action="GetById" asp-route-id=@user.Id>@user.Id</a>
+                    </div>
+                    <div class="row text-danger">First Name => @user.FirstName</div>
+                    <div class="row text-danger">Last Name => @user.LastName</div>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
