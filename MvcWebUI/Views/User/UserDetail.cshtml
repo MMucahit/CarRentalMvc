@@ -1,0 +1,18 @@
+﻿@model List<UserDetailDto>
+
+<div class="row">
+    @foreach (var userDto in Model)
+    {
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjw5H6WaR1giOrB-miehl0LfWQjduiotv6jR-YqSdsK-jQNK3ACCdbPKC95CBAtFcwY7w&usqp=CAU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <div class="row text-danger">First Name => @userDto.FirstName</div>
+                    <div class="row text-danger">Last Name => @userDto.LastName</div>
+                    <div class="row text-danger">Company Name => @userDto.CompanyName</div>
+                    </div>
+                </div>
+            </div>
+    }
+</div>
+

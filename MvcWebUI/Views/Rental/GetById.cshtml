@@ -1,0 +1,23 @@
+﻿@model Rental
+
+<div class="row ">
+    <div class="card mx-auto" style="width: 18rem;">
+        <img src="https://www.hazirtabela.com/image/cache/catalog/Rent-A-Car-1000x1000.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <div>
+                <div class="row text-danger">Car Id => @Model.CarId</div>
+                <div class="row text-danger">Customer Id => @Model.CustomerId</div>
+                <div class="row text-danger">Rent Date => @Model.RentDate</div>
+                <div class="row text-danger">Return Date => @Model.ReturnDate</div>
+                <form asp-action="Delete" asp-controller="Rental" method="post">
+                    <button class="btn btn-warning" type="submit">Delete</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+                <form asp-action="Update" asp-controller="Rental" method="get">
+                    <button class="btn btn-warning" type="submit">Update</button>
+                    <input type="hidden" id="Id" asp-for="Id">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

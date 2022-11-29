@@ -2,6 +2,7 @@
 using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Concrete
 {
@@ -39,6 +40,11 @@ namespace Business.Concrete
         {
             _userDal.Update(user);
             return new SuccessResult(true, "Updated");
+        }
+
+        public IDataResult<List<UserDetailDto>> UserDetail()
+        {
+            return new SuccessDataResult<List<UserDetailDto>>(_userDal.UserDetail(), true, "");
         }
     }
 }

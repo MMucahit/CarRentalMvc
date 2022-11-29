@@ -2,6 +2,7 @@
 using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Concrete
 {
@@ -34,6 +35,16 @@ namespace Business.Concrete
         public IDataResult<Rental> GetById(int id)
         {
             return new SuccessDataResult<Rental>(_rentalDal.Get(r => r.Id == id), true, "");
+        }
+
+        public IDataResult<List<Rental>> RentACar()
+        {
+            return new SuccessDataResult<List<Rental>>(_rentalDal.RentACar(), true, "");
+        }
+
+        public IDataResult<List<RentalDetailDto>> RentalDetail()
+        {
+            return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.RentalDetail(), true, "");
         }
 
         public IResult Update(Rental rental)

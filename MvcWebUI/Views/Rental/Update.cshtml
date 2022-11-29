@@ -1,0 +1,28 @@
+﻿@model Rental
+
+<form asp-action="Update" asp-controller="Rental" method="post">
+    <div class="mb-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" id="InputBrandId" asp-for="Id">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Car Id</label>
+        <input type="text" class="form-control" id="InputBrandId" asp-for="CarId">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Customer Id</label>
+        <input type="text" class="form-control" id="InputPrice" asp-for="CustomerId">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Rent Date</label>
+        <input type="text" class="form-control" id="InputDescription" asp-for="RentDate">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Return Date</label>
+        <input type="text" class="form-control" id="InputImageUrl" asp-for="ReturnDate">
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        Update Rent
+    </button>
+</form>

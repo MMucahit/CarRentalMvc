@@ -1,6 +1,7 @@
 ﻿using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
+using Entities.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MvcWebUI.Controllers
@@ -16,12 +17,12 @@ namespace MvcWebUI.Controllers
         public IActionResult GetAll()
         {
             List<User> result = _users.GetAll().Data;
-            return View("GetAll",result);
+            return View("GetAll", result);
         }
-        public IActionResult GetById(int id) 
+        public IActionResult GetById(int id)
         {
             User result = _users.GetById(id).Data;
-            return View("GetById",result);
+            return View("GetById", result);
         }
 
         [HttpGet]
@@ -59,6 +60,12 @@ namespace MvcWebUI.Controllers
             _users.Delete(user);
             Console.WriteLine("Deleted");
             return RedirectToAction("GetAll");
+        }
+
+        public IActionResult UserDetail()
+        {
+            List<UserDetailDto> result = _users.UserDetail().Data;
+            return View("UserDetail",result);
         }
     }
 }

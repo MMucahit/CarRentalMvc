@@ -1,0 +1,20 @@
+﻿@model List<RentalDetailDto>
+
+<div class="row">
+    @foreach (var rentalDto in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.hazirtabela.com/image/cache/catalog/Rent-A-Car-1000x1000.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="row text-danger">First Name => @rentalDto.FirstName</div>
+                    <div class="row text-danger">Last Name => @rentalDto.LastName</div>
+                    <div class="row text-danger">Company Name => @rentalDto.CompanyName</div>
+                    <div class="row text-danger">Brand => @rentalDto.Brand</div>
+                    <div class="row text-danger">Model Year => @rentalDto.ModelYear</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

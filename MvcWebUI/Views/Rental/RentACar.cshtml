@@ -1,0 +1,23 @@
+﻿@model List<Rental>
+
+<div class="row">
+    @foreach (var rental in Model)
+    {
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.hazirtabela.com/image/cache/catalog/Rent-A-Car-1000x1000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="row">
+                            <a asp-controller="Rental" asp-action="GetById" asp-route-id=@rental.Id>@rental.Id</a>
+                        </div>
+                        <div class="row text-danger">CarId => @rental.CarId</div>
+                        <div class="row text-danger">CustomerId => @rental.CustomerId</div>
+                    <form asp-action="RentACar" asp-controller="Rental" asp-route-id=@rental.Id method="post">
+                        <button class="btn btn-warning" type="submit">Rent</button>
+                        <input type="hidden" id="Id" asp-for=@rental.Id>
+                    </form>
+                    </div>
+                </div>
+            </div>
+    }
+</div>

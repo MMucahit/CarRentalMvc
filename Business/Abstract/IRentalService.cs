@@ -1,5 +1,6 @@
 ﻿using Core.Utilities.Result;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Abstract
 {
@@ -7,6 +8,8 @@ namespace Business.Abstract
     {
         IDataResult<Rental> GetById(int id);
         IDataResult<List<Rental>> GetAll();
+        IDataResult<List<Rental>> RentACar();
+        IDataResult<List<RentalDetailDto>> RentalDetail();
         IResult Add(Rental rental);
         IResult Update(Rental rental);
         IResult Delete(Rental rental);

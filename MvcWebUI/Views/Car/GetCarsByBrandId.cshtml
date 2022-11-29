@@ -1,19 +1,19 @@
 ﻿@model List<Car>
 
 <div class="row">
-    @foreach (var car in Model)
+    @foreach (var carDto in Model)
     {
         <div class="col-md-4">
             <div class="card" style="width: 18rem;">
                 <img src="https://cdnr.yenicaggazetesi.com.tr/resize/663x373//news/2022/05/200520220912040952724.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <div class="row">
-                        <a asp-controller="Car" asp-action="GetById" asp-route-id=@car.Id>@car.Id</a>
+                        <a asp-controller="Car" asp-action="GetById" asp-route-id=@carDto.Id>@carDto.Id</a>
                     </div>
-                    <div class="row text-danger">Model Year => @car.ModelYear</div>
-                    <div class="row text-danger">Daily Price => @car.DailyPrice</div>
-                    <div class="row text-danger">Brand Id => @car.BrandId</div>
-                    <div class="row text-danger">Color Id => @car.ColorId</div>
+                    <div class="row text-danger">Model Year => @carDto.ModelYear</div>
+                    <div class="row text-danger">Daily Price => @carDto.DailyPrice</div>
+                    <div class="row text-danger">Brand Id => @carDto.BrandId</div>
+                    <div class="row text-danger">Color Id => @carDto.ColorId</div>
                 </div>
             </div>
         </div>
