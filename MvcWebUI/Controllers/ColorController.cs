@@ -16,14 +16,14 @@ namespace MvcWebUI.Controllers
 
         public IActionResult GetAll()
         {
-            List<Color> colors = _colors.GetAll();
-            return View("GetAll", colors);
+            List<Color> result = _colors.GetAll().Data;
+            return View("GetAll", result);
         }
 
         public IActionResult GetById(int id)
         {
-            Color _color = _colors.GetById(id);
-            return View("GetById", _color);
+            Color result = _colors.GetById(id).Data;
+            return View("GetById", result);
         }
 
         [HttpGet]
@@ -43,8 +43,8 @@ namespace MvcWebUI.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            Color _color = _colors.GetById(id);
-            return View("Update", _color);
+            Color result = _colors.GetById(id).Data;
+            return View("Update", result);
         }
 
         [HttpPost]

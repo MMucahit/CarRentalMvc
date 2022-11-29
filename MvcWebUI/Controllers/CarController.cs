@@ -19,14 +19,14 @@ namespace MvcWebUI.Controllers
 
         public IActionResult GetAll()
         {
-            List<Car> cars = _cars.GetAll();
-            return View("GetAll", cars);
+            List<Car> result = _cars.GetAll().Data;
+            return View("GetAll", result);
         }
 
         public IActionResult GetById(int id)
         {
-            Car _car = _cars.GetById(id);
-            return View("GetById", _car);
+            Car result = _cars.GetById(id).Data;
+            return View("GetById", result);
         }
 
         [HttpGet]
@@ -46,8 +46,8 @@ namespace MvcWebUI.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            Car _car = _cars.GetById(id);
-            return View("Update", _car);
+            Car result = _cars.GetById(id).Data;
+            return View("Update", result);
         }
 
         [HttpPost]
@@ -68,20 +68,20 @@ namespace MvcWebUI.Controllers
 
         public IActionResult GetCarsByBrandId(int id)
         {
-            List<Car> cars = _cars.GetCarsByBrandId(id);
-            return View("GetCarsByBrandId", cars);
+            List<Car> result = _cars.GetCarsByBrandId(id).Data;
+            return View("GetCarsByBrandId", result);
         }
 
         public IActionResult GetCarsByColorId(int id)
         {
-            List<Car> cars = _cars.GetCarsByColorId(id);
-            return View("GetCarsByColorId", cars);
+            List<Car> result = _cars.GetCarsByColorId(id).Data;
+            return View("GetCarsByColorId", result);
         }
 
         public IActionResult GetCarDetail()
         {
-            List<CarDetailDto> cars = _cars.GetCarDetail().ToList();
-            return View("GetCarDetail", cars);
+            List<CarDetailDto> result = _cars.GetCarDetail().Data.ToList();
+            return View("GetCarDetail", result);
         }
     }
 }

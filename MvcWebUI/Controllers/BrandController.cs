@@ -15,14 +15,14 @@ namespace MvcWebUI.Controllers
 
         public IActionResult GetAll()
         {
-            List<Brand> brand = _brands.GetAll();
-            return View("GetAll", brand);
+            List<Brand> result = _brands.GetAll().Data;
+            return View("GetAll", result);
         }
 
         public IActionResult GetById(int id)
         {
-            Brand _brand = _brands.GetById(id);
-            return View("GetById", _brand);
+            Brand result = _brands.GetById(id).Data;
+            return View("GetById", result);
         }
 
         [HttpGet]
@@ -42,8 +42,8 @@ namespace MvcWebUI.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            Brand _brand = _brands.GetById(id);
-            return View("Update", _brand);
+            Brand result = _brands.GetById(id).Data;
+            return View("Update", result);
         }
 
         [HttpPost]
