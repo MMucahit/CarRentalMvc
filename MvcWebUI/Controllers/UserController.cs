@@ -1,5 +1,4 @@
-﻿using Business.Concrete;
-using DataAccess.Concrete.EntityFramework;
+﻿using Business.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +7,12 @@ namespace MvcWebUI.Controllers
 {
     public class UserController : Controller
     {
-        UserManager _users = new UserManager(new EfUserDal());
+        IUserService _userService;
+
+        public UserController(IUserService userService)
+        {
+            _userService = userService;
+        }
 
         public IActionResult Index()
         {
@@ -16,12 +20,12 @@ namespace MvcWebUI.Controllers
         }
         public IActionResult GetAll()
         {
-            List<User> result = _users.GetAll().Data;
+            List<User> result = _userService.GetAll().Data;
             return View("GetAll", result);
         }
         public IActionResult GetById(int id)
         {
-            User result = _users.GetById(id).Data;
+            User result = _userService.GetById(id).Data;
             return View("GetById", result);
         }
 
@@ -34,7 +38,7 @@ namespace MvcWebUI.Controllers
         [HttpPost]
         public IActionResult Add(User user)
         {
-            _users.Add(user);
+            _userService.Add(user);
             Console.WriteLine("Added");
             return RedirectToAction("GetAll");
         }
@@ -42,14 +46,14 @@ namespace MvcWebUI.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            User result = _users.GetById(id).Data;
+            User result = _userService.GetById(id).Data;
             return View("Update", result);
         }
 
         [HttpPost]
         public IActionResult Update(User user)
         {
-            _users.Update(user);
+            _userService.Update(user);
             Console.WriteLine("Updated");
             return RedirectToAction("GetAll");
         }
@@ -57,15 +61,15 @@ namespace MvcWebUI.Controllers
         [HttpPost]
         public IActionResult Delete(User user)
         {
-            _users.Delete(user);
+            _userService.Delete(user);
             Console.WriteLine("Deleted");
             return RedirectToAction("GetAll");
         }
 
         public IActionResult UserDetail()
         {
-            List<UserDetailDto> result = _users.UserDetail().Data;
-            return View("UserDetail",result);
+            List<UserDetailDto> result = _userService.UserDetail().Data;
+            return View("UserDetail", result);
         }
     }
 }

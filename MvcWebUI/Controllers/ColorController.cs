@@ -1,5 +1,4 @@
-﻿using Business.Concrete;
-using DataAccess.Concrete.EntityFramework;
+﻿using Business.Abstract;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,7 +6,12 @@ namespace MvcWebUI.Controllers
 {
     public class ColorController : Controller
     {
-        ColorManager _colors = new ColorManager(new EfColorDal());
+        IColorService _colorService;
+
+        public ColorController(IColorService colorService)
+        {
+            _colorService = colorService;
+        }
 
         public IActionResult Index()
         {
@@ -16,13 +20,13 @@ namespace MvcWebUI.Controllers
 
         public IActionResult GetAll()
         {
-            List<Color> result = _colors.GetAll().Data;
+            List<Color> result = _colorService.GetAll().Data;
             return View("GetAll", result);
         }
 
         public IActionResult GetById(int id)
         {
-            Color result = _colors.GetById(id).Data;
+            Color result = _colorService.GetById(id).Data;
             return View("GetById", result);
         }
 
@@ -35,7 +39,7 @@ namespace MvcWebUI.Controllers
         [HttpPost]
         public IActionResult Add(Color color)
         {
-            _colors.Add(color);
+            _colorService.Add(color);
             Console.WriteLine("Added");
             return RedirectToAction("GetAll");
         }
@@ -43,14 +47,14 @@ namespace MvcWebUI.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            Color result = _colors.GetById(id).Data;
+            Color result = _colorService.GetById(id).Data;
             return View("Update", result);
         }
 
         [HttpPost]
         public IActionResult Update(Color color)
         {
-            _colors.Update(color);
+            _colorService.Update(color);
             Console.WriteLine("Updated");
             return RedirectToAction("GetAll");
         }
@@ -58,7 +62,7 @@ namespace MvcWebUI.Controllers
         [HttpPost]
         public IActionResult Delete(Color color)
         {
-            _colors.Delete(color);
+            _colorService.Delete(color);
             Console.WriteLine("Deleted");
             return RedirectToAction("GetAll");
         }

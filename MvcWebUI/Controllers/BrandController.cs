@@ -1,5 +1,4 @@
-﻿using Business.Concrete;
-using DataAccess.Concrete.EntityFramework;
+﻿using Business.Abstract;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,7 +6,13 @@ namespace MvcWebUI.Controllers
 {
     public class BrandController : Controller
     {
-        BrandManager _brands = new BrandManager(new EfBrandDal());
+        IBrandService _brandService;
+
+        public BrandController(IBrandService brandService)
+        {
+            _brandService = brandService;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -15,13 +20,13 @@ namespace MvcWebUI.Controllers
 
         public IActionResult GetAll()
         {
-            List<Brand> result = _brands.GetAll().Data;
+            List<Brand> result = _brandService.GetAll().Data;
             return View("GetAll", result);
         }
 
         public IActionResult GetById(int id)
         {
-            Brand result = _brands.GetById(id).Data;
+            Brand result = _brandService.GetById(id).Data;
             return View("GetById", result);
         }
 
@@ -34,7 +39,7 @@ namespace MvcWebUI.Controllers
         [HttpPost]
         public IActionResult Add(Brand brand)
         {
-            _brands.Add(brand);
+            _brandService.Add(brand);
             Console.WriteLine("Added");
             return RedirectToAction("GetAll");
         }
@@ -42,14 +47,14 @@ namespace MvcWebUI.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            Brand result = _brands.GetById(id).Data;
+            Brand result = _brandService.GetById(id).Data;
             return View("Update", result);
         }
 
         [HttpPost]
         public IActionResult Update(Brand brand)
         {
-            _brands.Update(brand);
+            _brandService.Update(brand);
             Console.WriteLine("Updated");
             return RedirectToAction("GetAll");
         }
@@ -57,7 +62,7 @@ namespace MvcWebUI.Controllers
         [HttpPost]
         public IActionResult Delete(Brand brand)
         {
-            _brands.Delete(brand);
+            _brandService.Delete(brand);
             Console.WriteLine("Deleted");
             return RedirectToAction("GetAll");
         }

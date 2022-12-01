@@ -1,5 +1,4 @@
-﻿using Business.Concrete;
-using DataAccess.Concrete.EntityFramework;
+﻿using Business.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +7,12 @@ namespace MvcWebUI.Controllers
 {
     public class RentalController : Controller
     {
-        RentalManager _rentals = new RentalManager(new EfRentalDal());
+        IRentalService _rentalService;
+
+        public RentalController(IRentalService rentalService)
+        {
+            _rentalService = rentalService;
+        }
 
         public IActionResult Index()
         {
@@ -17,26 +21,26 @@ namespace MvcWebUI.Controllers
 
         public IActionResult GetAll()
         {
-            List<Rental> result = _rentals.GetAll().Data;
+            List<Rental> result = _rentalService.GetAll().Data;
             return View("GetAll", result);
         }
         public IActionResult GetById(int id)
         {
-            Rental result = _rentals.GetById(id).Data;
+            Rental result = _rentalService.GetById(id).Data;
             return View("GetById", result);
         }
 
         [HttpGet]
         public IActionResult Update(int id)
         {
-            Rental result = _rentals.GetById(id).Data;
+            Rental result = _rentalService.GetById(id).Data;
             return View("Update", result);
         }
 
         [HttpPost]
         public IActionResult Update(Rental rental)
         {
-            _rentals.Update(rental);
+            _rentalService.Update(rental);
             Console.WriteLine("Updated");
             return RedirectToAction("GetAll");
         }
@@ -44,7 +48,7 @@ namespace MvcWebUI.Controllers
         [HttpPost]
         public IActionResult Delete(Rental rental)
         {
-            _rentals.Delete(rental);
+            _rentalService.Delete(rental);
             Console.WriteLine("Deleted");
             return RedirectToAction("GetAll");
         }
@@ -52,22 +56,22 @@ namespace MvcWebUI.Controllers
         [HttpGet]
         public IActionResult RentACar()
         {
-            List<Rental> result = _rentals.RentACar().Data;
+            List<Rental> result = _rentalService.RentACar().Data;
             return View("RentACar", result);
         }
 
         [HttpPost]
         public IActionResult RentACar(int id)
         {
-            Rental result = _rentals.GetById(id).Data;
+            Rental result = _rentalService.GetById(id).Data;
             result.RentDate = new DateTime(); //new DateTime() == null
-            _rentals.Update(result);
+            _rentalService.Update(result);
             return RedirectToAction("RentACar");
         }
         public IActionResult RentalDetail()
         {
-            List<RentalDetailDto> result = _rentals.RentalDetail().Data;
-            return View("RentalDetail",result);
+            List<RentalDetailDto> result = _rentalService.RentalDetail().Data;
+            return View("RentalDetail", result);
         }
     }
 }

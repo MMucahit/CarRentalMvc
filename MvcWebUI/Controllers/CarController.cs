@@ -1,5 +1,4 @@
-﻿using Business.Concrete;
-using DataAccess.Concrete.EntityFramework;
+﻿using Business.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +9,14 @@ namespace MvcWebUI.Controllers
     {
         //InMemoryCarDal _cars = new InMemoryCarDal();
         //EfCarDal _cars = new EfCarDal();
-        CarManager _cars = new CarManager(new EfCarDal());
+        //CarManager _cars = new CarManager(new EfCarDal());
+
+        ICarService _carService;
+
+        public CarController(ICarService carService)
+        {
+            _carService = carService;
+        }
 
         public IActionResult Index()
         {
@@ -19,13 +25,13 @@ namespace MvcWebUI.Controllers
 
         public IActionResult GetAll()
         {
-            List<Car> result = _cars.GetAll().Data;
+            List<Car> result = _carService.GetAll().Data;
             return View("GetAll", result);
         }
 
         public IActionResult GetById(int id)
         {
-            Car result = _cars.GetById(id).Data;
+            Car result = _carService.GetById(id).Data;
             return View("GetById", result);
         }
 
@@ -38,7 +44,7 @@ namespace MvcWebUI.Controllers
         [HttpPost]
         public IActionResult Add(Car car)
         {
-            _cars.Add(car);
+            _carService.Add(car);
             Console.WriteLine("Added");
             return RedirectToAction("GetAll");
         }
@@ -46,14 +52,14 @@ namespace MvcWebUI.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            Car result = _cars.GetById(id).Data;
+            Car result = _carService.GetById(id).Data;
             return View("Update", result);
         }
 
         [HttpPost]
         public IActionResult Update(Car car)
         {
-            _cars.Update(car);
+            _carService.Update(car);
             Console.WriteLine("Updated");
             return RedirectToAction("GetAll");
         }
@@ -61,26 +67,26 @@ namespace MvcWebUI.Controllers
         [HttpPost]
         public IActionResult Delete(Car car)
         {
-            _cars.Delete(car);
+            _carService.Delete(car);
             Console.WriteLine("Deleted");
             return RedirectToAction("GetAll");
         }
 
         public IActionResult GetCarsByBrandId(int id)
         {
-            List<Car> result = _cars.GetCarsByBrandId(id).Data;
+            List<Car> result = _carService.GetCarsByBrandId(id).Data;
             return View("GetCarsByBrandId", result);
         }
 
         public IActionResult GetCarsByColorId(int id)
         {
-            List<Car> result = _cars.GetCarsByColorId(id).Data;
+            List<Car> result = _carService.GetCarsByColorId(id).Data;
             return View("GetCarsByColorId", result);
         }
 
         public IActionResult GetCarDetail()
         {
-            List<CarDetailDto> result = _cars.GetCarDetail().Data.ToList();
+            List<CarDetailDto> result = _carService.GetCarDetail().Data.ToList();
             return View("GetCarDetail", result);
         }
     }
