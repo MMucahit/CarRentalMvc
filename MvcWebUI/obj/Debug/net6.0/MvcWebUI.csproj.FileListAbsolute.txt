@@ -186,3 +186,7 @@ C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI\obj\Debug\net6.0\refint\MvcWe
 C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI\obj\Debug\net6.0\MvcWebUI.pdb
 C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI\obj\Debug\net6.0\MvcWebUI.genruntimeconfig.cache
 C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI\obj\Debug\net6.0\ref\MvcWebUI.dll
+C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI\bin\Debug\net6.0\Autofac.dll
+C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI\bin\Debug\net6.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\MMucahitNAS\Desktop\CarRentalMvc\MvcWebUI\bin\Debug\net6.0\Castle.Core.dll

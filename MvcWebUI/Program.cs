@@ -1,5 +1,8 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Business.Abstract;
 using Business.Concrete;
+using Business.DependencyResolver.Autofac;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.EFCore;
@@ -17,21 +20,29 @@ builder.Services.AddDbContext<EFCoreContext>
     ("sqlconnection")));
 //
 
-// IoC
-builder.Services.AddSingleton<IBrandService, BrandManager>();
-builder.Services.AddSingleton<IBrandDal, EfBrandDal>();
+//Autofac implementation
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
+{
+    builder.RegisterModule(new AutofacBusinessModule());
+});
+//
 
-builder.Services.AddSingleton<ICarService, CarManager>();
-builder.Services.AddSingleton<ICarDal, EfCarDal>();
+// IoC Autofac implementasyonu yaptýk.
+//builder.Services.AddSingleton<IBrandService, BrandManager>();
+//builder.Services.AddSingleton<IBrandDal, EfBrandDal>();
 
-builder.Services.AddSingleton<IColorService, ColorManager>();
-builder.Services.AddSingleton<IColorDal, EfColorDal>();
+//builder.Services.AddSingleton<ICarService, CarManager>();
+//builder.Services.AddSingleton<ICarDal, EfCarDal>();
 
-builder.Services.AddSingleton<IRentalService, RentalManager>();
-builder.Services.AddSingleton<IRentalDal, EfRentalDal>();
+//builder.Services.AddSingleton<IColorService, ColorManager>();
+//builder.Services.AddSingleton<IColorDal, EfColorDal>();
 
-builder.Services.AddSingleton<IUserService, UserManager>();
-builder.Services.AddSingleton<IUserDal, EfUserDal>();
+//builder.Services.AddSingleton<IRentalService, RentalManager>();
+//builder.Services.AddSingleton<IRentalDal, EfRentalDal>();
+
+//builder.Services.AddSingleton<IUserService, UserManager>();
+//builder.Services.AddSingleton<IUserDal, EfUserDal>();
 //
 
 var app = builder.Build();

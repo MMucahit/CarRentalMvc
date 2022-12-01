@@ -85,3 +85,7 @@ C:\Users\MMucahitNAS\Desktop\CarRentalMvc\WebAPI\obj\Debug\net6.0\refint\WebAPI.
 C:\Users\MMucahitNAS\Desktop\CarRentalMvc\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\MMucahitNAS\Desktop\CarRentalMvc\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\MMucahitNAS\Desktop\CarRentalMvc\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\MMucahitNAS\Desktop\CarRentalMvc\WebAPI\bin\Debug\net6.0\Autofac.dll
+C:\Users\MMucahitNAS\Desktop\CarRentalMvc\WebAPI\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\MMucahitNAS\Desktop\CarRentalMvc\WebAPI\bin\Debug\net6.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\MMucahitNAS\Desktop\CarRentalMvc\WebAPI\bin\Debug\net6.0\Castle.Core.dll
