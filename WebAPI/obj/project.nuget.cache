@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "V8wMAGOOu5dEvGpFBGX8gStDHvsdrRQ6X7wLsOLhEybizuUtx5qNjpo+7buMlw1QUpMEU3PK7vsOCtaLCaCpiw==",
+  "dgSpecHash": "TdtM+GYYmEV6wWDZRNoLdu3daaWxIBKoZ001/C1+t58qHuAzSup8DH+HNXNiYsZfqUx4LxbTCNCsno93cKCYIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\MMucahitNAS\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

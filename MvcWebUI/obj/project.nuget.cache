@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bNINV3OcGj3mFIT7WgPWlAoQWslZJvvvPkMJJa1hQExLpcyDVITHu/dSw1ziPghXmRrV7HxkACJBzRtWpkGlpg==",
+  "dgSpecHash": "zkmgBhCwDUw6d/f/db9XfU8GXiZ0b8bJbfWIiwHa9rPzDs852ZVgN6uTkW33zugk8dsWLH38T6mRLt5zlGSQFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\MMucahitNAS\\Desktop\\CarRentalMvc\\MvcWebUI\\MvcWebUI.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\MMucahitNAS\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

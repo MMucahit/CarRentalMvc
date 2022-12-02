@@ -1,6 +1,5 @@
-﻿using Business.Abstract;
+﻿using Business.AbstractValidator;
 using Entities.Concrete;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
@@ -74,7 +73,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("UserDetail")]
-        public IActionResult UserDetail() 
+        public IActionResult UserDetail()
         {
             var result = _userService.UserDetail();
             if (result.Success)

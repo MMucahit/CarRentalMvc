@@ -2,7 +2,7 @@
 using Entities.Concrete;
 using Entities.DTOs;
 
-namespace Business.Abstract
+namespace Business.AbstractValidator
 {
     public interface ICarService
     {

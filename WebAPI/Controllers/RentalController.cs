@@ -1,6 +1,5 @@
-﻿using Business.Abstract;
+﻿using Business.AbstractValidator;
 using Entities.Concrete;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers

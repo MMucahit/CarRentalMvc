@@ -1,4 +1,6 @@
-﻿using Business.Abstract;
+﻿using Business.AbstractValidator;
+using Business.ValidationRules.FluentValidation;
+using Core.CrossCuttingConcern.Validation;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -17,6 +19,8 @@ namespace Business.Concrete
 
         public IResult Add(Rental rental)
         {
+            ValidationTools.Validate(new RentalValidator(), rental);
+
             _rentalDal.Add(rental);
             return new SuccessResult(true, "Added!");
         }
